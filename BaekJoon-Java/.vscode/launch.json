@@ -1,0 +1,36 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch CardGame",
+      "request": "launch",
+      "mainClass": "Programmers.CardGame",
+      "projectName": "BaekJoon-Java_c8415746"
+    },
+    {
+      "type": "java",
+      "name": "Launch BestAlbum",
+      "request": "launch",
+      "mainClass": "Programmers.BestAlbum",
+      "projectName": "BaekJoon-Java_c8415746"
+    },
+    {
+      "type": "java",
+      "name": "Launch c",
+      "request": "launch",
+      "mainClass": "Programmers.c",
+      "projectName": "BaekJoon-Java_c8415746"
+    },
+    {
+      "type": "java",
+      "name": "Launch test",
+      "request": "launch",
+      "mainClass": "Programmers.test",
+      "projectName": "BaekJoon-Java_c8415746"
+    }
+  ]
+}

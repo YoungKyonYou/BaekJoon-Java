@@ -55,7 +55,7 @@ public class  Problem2{
 
         return ans;
     }
-      public static void printArrTwo(int[][] arr) {
+    public static void printArrTwo(int[][] arr) {
         for (int[] a : arr) {
             System.out.print(Arrays.toString(a));
         }
