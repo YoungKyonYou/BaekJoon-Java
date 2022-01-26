@@ -2,9 +2,12 @@ package ESTSoft;
 import java.util.*;
 public class  Problem1{
     public static void main(String[] args) throws Exception {
+        //3
         String[] scores = { "AAFAFA", "FEECAA", "FABBCB", "CBEDEE", "CCCCCC" };
+
+        //3
         String[] scores2 = { "BCD", "ABB", "FEE","CCC" };
-        System.out.println(solution(scores2));
+        System.out.println(solution(scores));
     }
 
     public static int solution(String[] scores) {

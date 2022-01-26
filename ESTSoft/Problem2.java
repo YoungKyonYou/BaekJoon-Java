@@ -7,9 +7,6 @@ public class Problem2 {
 
     public static void main(String[] args) throws Exception {
         int[][] needs = { { 1, 0, 0 }, { 1, 1, 0 }, { 1, 1, 0 }, { 1, 0, 1 }, { 1, 1, 0 }, { 0, 1, 1 } };
-        // 답: 1 ,1 ,0, 0, 1
-        int[][] needs2 = { { 1, 0, 0, 1, 1, 1, 1 }, { 1, 1, 0, 0, 1, 0, 1 }, { 1, 1, 0, 1, 1, 1, 0 },
-                { 1, 0, 1, 0, 1, 0, 0 }, { 1, 1, 0, 0, 0, 0, 1 }, { 0, 1, 1, 0, 1, 1, 1 } };
         int r = 2;
         solution(needs, r);
         System.out.println(answer);

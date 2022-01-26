@@ -6,9 +6,9 @@
   "configurations": [
     {
       "type": "java",
-      "name": "Launch BuildingBridge",
+      "name": "Launch Coin1",
       "request": "launch",
-      "mainClass": "DynamicProgramming.BuildingBridge",
+      "mainClass": "DynamicProgramming.Coin1",
       "projectName": "BaekJoon-Java_c8415746"
     }
   ]
