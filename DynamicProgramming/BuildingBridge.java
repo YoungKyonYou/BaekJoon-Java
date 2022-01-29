@@ -2,7 +2,17 @@ package DynamicProgramming;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
-public class  BuildingBridge{
+
+public class BuildingBridge {
+    static long[][] dy = new long[31][31];
+    public static long DFS(int n, int r) {
+        if (dy[n][r] > 0)
+            return dy[n][r];
+        if (n == r || r == 0)
+            return 1;
+        else
+            return dy[n][r] = DFS(n - 1, r - 1) + DFS(n - 1, r);
+    }
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int T = Integer.parseInt(br.readLine());
@@ -11,22 +21,9 @@ public class  BuildingBridge{
             int l = Integer.parseInt(st.nextToken());
             int r = Integer.parseInt(st.nextToken());
             
-            long sum = 0;
-            long temp = r;
-            long tl = r;
-            for (int j = 0; j < l - 1; j++) {
-                temp *= (tl - 1);
-                tl--;
-            }
-            long tmp = l;
-            long tr = l;
-            for (int j = l; j > 1; j--) {
-                tmp *= (tr - 1);
-                tr--;
-            }
-            sum = (long)(temp / tmp);
+           
 
-            System.out.println(sum);
+            System.out.println(DFS(r,l));
         }
     }
 
